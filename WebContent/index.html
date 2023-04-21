@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="utf-8">
+	<title>Yumiko Takiguchi</title>
+	<meta name="description" content="自己紹介サイトです">
+	<meta name="robots" content="noindex,nofollow">
+	<meta name="keywords" content="">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<!--=============Google Font ===============-->
+	<link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+	<!--==============レイアウトを制御する独自のCSSを読み込み===============-->
+	<!--印象編　6-3　スクロールすると画面分割した左右がそれぞれ動く-->
+	<link rel="stylesheet" type="text/css"
+		href="https://cdnjs.cloudflare.com/ajax/libs/multiscroll.js/0.2.2/jquery.multiscroll.css">
+	<!--自作のCSS-->
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/parts.css">
+	<link rel="stylesheet" type="text/css" href="css/layout.css">
+</head>
+
+<body>
+	<div id="splash">
+		<div id="splash_logo">
+			<svg version="1.1" id="mask" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+				x="0px" y="0px" width="1010.6px" height="121px" viewBox="0 0 1010.6 121"
+				style="enable-background:new 0 0 1010.6 121;" xml:space="preserve">
+			</svg>
+			<!--/splash-logo-->
+		</div>
+		<!--/splash-->
+	</div>
+
+	<div id="container">
+		<header id="header">
+			<nav>
+				<ul id="menu">
+					<li data-menuanchor="area1"><a href="#area1">Top</a></li>
+					<li><a href="MyProfile.html">My Profile</a></li>
+					<li><a href="Myfavorite.html">My Favorite</a></li>
+					<li data-menuanchor="area4"><a href="#area4">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<div id="wrapper">
+			<!--左右分割している？-->
+			<div class="ms-left">
+				<div class="ms-section" id="left1">
+					<h1 class="TextTyping">Yumiko Takiguchi</h1>
+					<div class="particle" id="pt1"></div>
+				</div>
+				<section class="ms-section" id="left2">
+					<div class="sp-top"></div>
+					<div class="sp-bottom">
+						<h2>My Profile</h2>
+						<a href="MyProfile.html" class="btn bgleft"><span>GO</span>
+						</a>
+					</div>
+				</section>
+				<section class="ms-section" id="left3">
+					<div class="sp-top"></div>
+					<div class="sp-bottom">
+						<h2>My Favorite</h2>
+						<a href="MyFavorite.html" class="btn bgleft"><span>GO</span></a>
+					</div>
+				</section>
+
+				<section class="ms-section" id="left6">
+					<div class="sp-bottom">
+						<h2>Contact</h2>
+
+						<a href="mailto:y.takiguchi@a-force.co.jp" target="_blank"><img src="img/ラブレターアイコン1.svg"
+								alt="mail"></a>
+
+					</div>
+				</section>
+				<!--/ms-left-->
+			</div>
+
+			<div class="ms-right">
+				<div class="ms-section" id="right1">
+					<div class="scrolldown1"><span>Scroll</span></div>
+					<div class="particle" id="pt2"></div>
+					<!--/right1-->
+				</div>
+
+				<div class="ms-section" id="right2">
+					<!--/right2-->
+				</div>
+
+				<div class="ms-section" id="right3">
+					<!--/right3-->
+				</div>
+				<div class="ms-section" id="right6">
+					<!--/right6-->
+				</div>
+				<!--/ms-right-->
+			</div>
+
+			<!--/wrapper-->
+		</div>
+		<footer id="footer">
+			<small>&copy;Yumiko Takiguchi</small>
+		</footer>
+		<!--/container-->
+	</div>
+
+	<!--=============JS ===============-->
+	<!--jQuery-->
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<!--機能編 4-1-5　ロゴアウトラインアニメーション-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/vivus/0.4.4/vivus.min.js"></script>
+	<!--印象編　6-3　スクロールすると画面分割した左右がそれぞれ動く-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/multiscroll.js/0.2.2/jquery.multiscroll.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+	<!--自作のJS-->
+	<script src="js/script.js"></script>
+
+</body>
+
+</html>

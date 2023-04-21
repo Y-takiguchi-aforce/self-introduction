@@ -1,0 +1,191 @@
+@charset "utf-8";
+
+/*左上のナビゲーション*/
+
+#menu li {
+	display: inline-block;
+}
+
+#menu li a {
+	display: inline-block;
+	text-decoration: none;
+	color: #ccc;
+	padding: 20px;
+}
+
+body {
+	font-family: 'Oswald', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	color: #fff;
+	font-size: 1rem;
+	line-height: 1.85;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-text-size-adjust: 100%;
+	word-wrap: break-word;
+	background-color: #fff;
+}
+
+/*==================================================
+　機能編 5-3-2　中心から外に線が伸びる（中央）
+===================================*/
+#menu li a {
+	/*線の基点とするためrelativeを指定*/
+	position: relative;
+}
+
+#menu li a::after {
+	content: '';
+	/*絶対配置で線の位置を決める*/
+	position: absolute;
+	bottom: 34px;
+	left: 10%;
+	/*線の形状*/
+	width: 80%;
+	height: 1px;
+	background: #fff;
+	/*アニメーションの指定*/
+	transition: all .3s;
+	transform: scale(0, 1);
+	/*X方向0、Y方向1*/
+	transform-origin: center top;
+	/*上部中央基点*/
+}
+
+/*現在地とhoverの設定*/
+#menu li a:hover::after {
+	transform: scale(1, 1);
+	/*X方向にスケール拡大*/
+}
+
+/* HEADER */
+
+nav {
+	position: relative;
+	z-index: 999;
+	padding: 5px 20px;
+}
+
+
+
+h1 {
+
+	color: black;
+	text-align: center;
+}
+
+
+
+/*========= バー表示のためのCSS ===============*/
+
+/*タイムライン全体の設定*/
+.timeline {
+	max-width: 640px;
+	width: 100%;
+	margin: 50px auto;
+	padding: 0 30px;
+}
+
+.timeline li {
+	/*線の起点とするためrelativeを設定*/
+	position: relative;
+	list-style: none;
+	padding: 0 0 20px 0;
+}
+
+.timeline dl {
+	margin: 0 0 20px 3em;
+	color: black;
+}
+
+.timeline dd strong {
+	display: block;
+	padding: 10px 0;
+}
+
+/*絶対配置で線を設定*/
+.border-line {
+	/*線の位置*/
+	position: absolute;
+	left: 0.2em;
+	top: 0;
+	width: 2px;
+	/*線の太さ*/
+	height: 0;
+	/*はじめは高さを0に*/
+	background: #ccc;
+}
+
+/*タイムラインの見出し横の丸の位置と形状*/
+.timeline li::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 10px;
+	height: 10px;
+	background: #666;
+	border-radius: 50%;
+}
+
+
+/*========= レイアウトのためのCSS ===============*/
+
+
+
+
+div {
+	width: 640px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+h2 {
+	font-size: 1.2rem;
+	text-align: center;
+	margin: 0 0 30px 0;
+	color: black;
+}
+
+p,
+ul {
+	margin-top: 20px;
+}
+
+a {
+	color: #333;
+}
+
+small {
+	color: black;
+	display: block;
+	text-align: center;
+	padding: 20px;
+}
+
+
+section {
+	padding: 30px;
+	background-color: #0f7fa7;
+}
+
+section:first-child {
+	padding: 30px 30px 0px;
+	background: white;
+}
+
+
+
+/*家族構成の部分*/
+table {
+	width: 100%;
+	text-align: center;
+}
+
+img {
+	width: 100px;
+	height: 100px;
+	text-align: center;
+
+}

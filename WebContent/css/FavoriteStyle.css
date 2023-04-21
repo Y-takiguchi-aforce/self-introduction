@@ -1,0 +1,171 @@
+@charset "UTF-8";
+
+/*左上のナビゲーション*/
+
+#menu li {
+	display: inline-block;
+}
+
+#menu li a {
+	display: inline-block;
+	text-decoration: none;
+	color: #ccc;
+	padding: 20px;
+}
+
+body {
+	font-family: 'Oswald', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	color: #fff;
+	font-size: 1rem;
+	line-height: 1.85;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-text-size-adjust: 100%;
+	word-wrap: break-word;
+}
+
+/*==================================================
+　機能編 5-3-2　中心から外に線が伸びる（中央）
+===================================*/
+#menu li a {
+	/*線の基点とするためrelativeを指定*/
+	position: relative;
+}
+
+#menu li a::after {
+	content: '';
+	/*絶対配置で線の位置を決める*/
+	position: absolute;
+	bottom: 34px;
+	left: 10%;
+	/*線の形状*/
+	width: 80%;
+	height: 1px;
+	background: #fff;
+	/*アニメーションの指定*/
+	transition: all .3s;
+	transform: scale(0, 1);
+	/*X方向0、Y方向1*/
+	transform-origin: center top;
+	/*上部中央基点*/
+}
+
+/*現在地とhoverの設定*/
+#menu li a:hover::after {
+	transform: scale(1, 1);
+	/*X方向にスケール拡大*/
+}
+
+/* HEADER */
+
+nav {
+	position: relative;
+	z-index: 999;
+	padding: 5px 20px;
+}
+
+h1 {
+	color: black;
+	text-align: center;
+}
+
+/*footer*/
+small {
+
+	color: black;
+	display: block;
+	text-align: center;
+	padding: 20px;
+}
+
+
+h2 {
+	color: black;
+}
+
+/*HiHi Jets*/
+/*.youtube {
+	position: relative;
+	height: 0;
+	margin-bottom: 20px;
+	padding-bottom: 56.25%;
+	overflow: hidden;
+}
+
+.youtube iframe {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+}
+*/
+
+@media screen and (min-width: 600px) {
+	.float-right {
+		float: right;
+		width: 49.5%;
+		color: black;
+	}
+
+	.float-left {
+		float: left;
+		width: 49.5%;
+	}
+
+	.wrap:after {
+		display: block;
+		clear: both;
+		content: "";
+	}
+
+	.webpage {
+		float: left;
+		width: 49.5%;
+	}
+}
+
+
+.youtube img:hover {
+	opacity: 0.5;
+}
+
+.webpage img:hover {
+	opacity: 0.5;
+}
+
+/*.web iframe {
+	width: 100%;
+	position: absolute;
+	top: 0 left 0;
+}
+*/
+
+
+/*餃子*/
+
+h3,
+p {
+	color: black;
+}
+
+
+.flex-container {
+	width: auto;
+	height: auto;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+}
+
+.flex-container eat {
+	width: 180px;
+	height: 180px;
+	border: 3px solid #ccc;
+}
+
+.flex-container img {
+	width: 180px;
+}

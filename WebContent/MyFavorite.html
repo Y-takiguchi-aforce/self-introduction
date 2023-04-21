@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="utf-8">
+	<title>Yumiko Takiguchi</title>
+	<meta name="description" content="自己紹介サイトです">
+	<meta name="robots" content="noindex,nofollow">
+	<meta name="keywords" content="">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<!--=============Google Font ===============-->
+	<link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+	<!--==============レイアウトを制御する独自のCSSを読み込み===============-->
+	<!--印象編　6-3　スクロールすると画面分割した左右がそれぞれ動く-->
+	<link rel="stylesheet" type="text/css"
+		href="https://cdnjs.cloudflare.com/ajax/libs/multiscroll.js/0.2.2/jquery.multiscroll.css">
+	<!--自作のCSS-->
+	<link rel="stylesheet" type="text/css" href="css/FavoriteStyle.css">
+
+</head>
+
+<body>
+	<header id="header">
+		<nav>
+			<ul id="menu">
+				<li><a href="index.html">Top</a></li>
+				<li><a href="MyProfile.html">My Profile</a></li>
+				<li><a href="Myfavorite.html">My Favorite</a></li>
+				<li><a href="index.html#area4">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<link rel="stylesheet" type="text/css"
+		href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/reset.css">
+	<link rel="stylesheet" type="text/css"
+		href="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/5-4-1/css/5-4-1.css">
+
+
+	<h1>My Favorite</h1>
+
+	<div class="wrapper">
+		<ul class="tab">
+			<li><a href="#HHJ">HiHi Jets</a></li>
+			<li><a href="#food">Food</a></li>
+		</ul>
+
+		<div id="HHJ" class="area">
+			<h2>HiHi Jets</h2>
+			<div class="wrap">
+				<div class="float-left">
+					<div class="youtube">
+						<a href="https://www.youtube.com/watch?v=ceAVmFi6sTI" target="_blank"><img src="img/youtube.svg"
+								alt="MV" width="450" height="260"></a>
+						<!--<iframe width="450" height="260" src="https://www.youtube.com/embed/ceAVmFi6sTI"
+							title="YouTube video player"
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+							allowfullscreen></iframe>-->
+						<div class="webpage">
+							<a href="https://j-island.net/s/jitv/groups/6" target="_blank"><img src="img/website.svg"
+									alt="official site" width="450" height="260"></a>
+							<!--<iframe src="https://j-island.net/s/jitv/groups/6" width="100%" height="400px">
+				</iframe>-->
+						</div>
+					</div>
+				</div>
+				<div class="float-right">
+					<p>昔から嵐が好きだったのですが、高校3年になる春、<br>
+						初めてジャニーズがYouTubeを始めるとの話を聞き</p>
+					<p>ふらっと視聴。気づけば今年でファン6年目。</p>
+					<p>平均年齢21.4歳、ローラースケートでダンスするグループです。</p>
+					<p>ドラマ、映画、舞台、バラエティーにもひっぱりだこで最近は録画残量が追いつきません。</p>
+					<p>今年こそCDデビューしてほしいな～～</p>
+				</div>
+
+			</div>
+			<!--/area-->
+		</div>
+
+		<div id="food" class="area">
+			<h2>Food</h2>
+			<div class="flex-container">
+				<div class="eat">
+					<img src="img/gyouzaoishii.png" alt="餃子">
+					<h3>餃子</h3>
+					<p>最近で一番美味しかったのは、池袋の「開楽」というお店！<br>
+						大きめのサイズ感で、皮がもちもちでした<br>
+						でも結局母の餃子が一番。</p>
+				</div>
+
+				<div class="eat">
+					<img src="img/reimen.png" alt="盛岡冷麺">
+					<h3>辛い食べ物</h3>
+					<p>岩手県民は少なくとも月に一回はキムチたくさんの盛岡冷麺を食べます（個人差あり）<br>
+						それで慣れちゃたのか、辛い食べ物がすごく好きです。<br>
+						早稲田キャンパスに用事がある時は、友達と高田馬場で蒙古タンメン食べてました。<br>
+						何かおすすめありましたら教えてください。
+					</p>
+				</div>
+			</div>
+			<!--/area-->
+		</div>
+
+		<!--wrapper-->
+	</div>
+	<footer id="footer">
+		<small>&copy;Yumiko Takiguchi</small>
+	</footer>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/5-4-1/js/5-4-1.js"></script>
+	<!--自作のJS-->
+	<script src="js/Favoritejs.js"></script>
+</body>
+
+</html>
